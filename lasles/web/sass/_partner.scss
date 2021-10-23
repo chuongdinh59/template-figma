@@ -1,0 +1,22 @@
+.partner{
+    &-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:  0 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    
+}
+
+@media screen and (max-width: 735px){
+    .partner{
+        &-list{
+            gap: 0 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+    }
+}

@@ -1,0 +1,22 @@
+body{
+    font-size: 16px;
+    color: $primary-color;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #f6f6f6;
+}
+.container{
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+a{
+    color: $primary-color;
+}
+.strong{
+    font-weight: 700;
+    color: $second-color;
+}

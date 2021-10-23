@@ -1,0 +1,107 @@
+.plan{ 
+    padding: 80px 0 30px;
+    background: linear-gradient(
+      180deg,
+      #f8f8f8 -45.04%,
+      rgba(248, 248, 248, 0) 88.56%
+    );
+    &-header{
+        text-align: center;
+        margin-bottom: 62px;
+        &-heading{
+            font-size: 35px;
+            margin-bottom: 32px;
+        }
+        &-caption{
+            max-width: 555px;
+            margin: 0 auto;
+        }
+    }
+    &-wrapper{
+        margin-bottom: 50px;
+    }
+    &-main{
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       gap: 0 55px;
+       
+    }
+    &-item{
+        border: 2px solid #DDDDDD;
+        border-radius: 10px;
+        display:flex;
+        align-items:center;
+        // justify-content:center;
+        flex-direction:column;
+        padding: 50px 0px;
+    }
+    &-details{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-bottom: 50px;
+    }
+    &-status{
+        margin: 30px 0;
+    }
+    &-title{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap: 0 20px;
+    }
+    &-servers{
+        line-height: 30px;
+    }
+
+    &-price{
+        font-size: 25px;
+        margin-bottom: 20px;
+        margin-top: auto;
+    }
+    &-btn{
+        color:$btn-color;
+        font-weight: 600;
+        border:2px solid ;
+        border-radius: 25px;
+        padding: 15px 65px;
+    }
+    &-item:last-child{
+        border-color: $btn-color;
+        a{
+            background-color: $btn-color;
+            color: #ffffff;
+            position: relative;
+            &::after{
+                content: "";
+                width: 80%;
+                height: 85%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%); 
+                background: rgba(245, 56, 56, 0.35);
+                filter: blur(54px);
+                border-radius: 60px;
+                z-index: -1;
+            }
+        }
+    }
+}
+@media screen and (max-width: 735px){
+    .plan{
+        padding-top: 0;
+        padding-bottom: 80px;
+        &-header{
+            margin-bottom: 30px;
+            &-heading{
+                margin-bottom: 15px;
+            }
+        }
+        
+        &-main{
+            grid-template-columns: 1fr;
+            gap: 20px 0;
+        }
+    }
+}
