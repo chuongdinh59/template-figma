@@ -1,0 +1,51 @@
+.testi{
+    margin-top: 250px;
+    &-heading{
+        margin-bottom: 30px;
+    }
+    &-content{
+        width: 100%;
+        max-width: 450px;
+    }
+    &-main{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #000;
+        font-size: 24px;
+        line-height: calc(36/24);
+        font-family: 'Mulish', sans-serif;
+    }
+    &-rate{
+        margin-bottom: 30px;
+        & i{
+            color: #FFBB0C;
+            margin-right: 10px;            ;
+        }
+    }
+    &-text{
+        margin-bottom: 40px;
+    }
+    &-auth{
+        font-size: 22px;
+        font-weight: 700;
+        line-height: calc(48/22);
+    }
+    &-position{
+        font-size: 18px;
+
+    }
+}
+@media screen and (max-width: 735px){
+    .testi{
+        margin-top: 150px;
+        &-main{
+           display: flex;
+           flex-direction: column;
+           
+        }
+        &-content{
+            margin-bottom: 50px;
+        }
+    }
+}
